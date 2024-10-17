@@ -1,0 +1,13 @@
+{
+    "__comment": "Model for two adjacent connected sides (default = up/east)",
+	"parent": "block/cube",
+    "textures": {
+		"particle": "blocks/barrier/barrier",
+        "down": "blocks/barrier/barrier-E",
+		"up": "blocks/barrier/barrier-NESW",
+		"north": "blocks/barrier/barrier-NW",
+		"south": "blocks/barrier/barrier-NE",
+		"west": "blocks/barrier/barrier-N",
+		"east": "blocks/barrier/barrier-NESW"
+    }
+}

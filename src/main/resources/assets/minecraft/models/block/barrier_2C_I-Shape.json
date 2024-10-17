@@ -1,0 +1,13 @@
+{
+    "__comment": "Model for two connected sides (default = up/down)",
+	"parent": "block/cube",
+    "textures": {
+		"particle": "blocks/barrier/barrier",
+        "down": "blocks/barrier/barrier-NESW",
+		"up": "blocks/barrier/barrier-NESW",
+		"north": "blocks/barrier/barrier-NS",
+		"south": "blocks/barrier/barrier-NS",
+		"west": "blocks/barrier/barrier-NS",
+		"east": "blocks/barrier/barrier-NS"
+    }
+}

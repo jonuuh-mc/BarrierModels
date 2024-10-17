@@ -1,0 +1,82 @@
+{
+  "variants": {
+    "down=false,east=false,north=false,south=false,up=false,west=false": { "model": "barrier_0C" },
+
+    "down=false,east=false,north=false,south=false,up=true,west=false": { "model": "barrier_1C" },
+    "down=false,east=false,north=true,south=false,up=false,west=false": { "model": "barrier_1C", "x": 90 },
+    "down=true,east=false,north=false,south=false,up=false,west=false": { "model": "barrier_1C", "x": 180 },
+    "down=false,east=false,north=false,south=true,up=false,west=false": { "model": "barrier_1C", "x": 270 },
+    "down=false,east=true,north=false,south=false,up=false,west=false": { "model": "barrier_1C", "x": 90, "y": 90 },
+    "down=false,east=false,north=false,south=false,up=false,west=true": { "model": "barrier_1C", "x": 90, "y": 270 },
+
+    "down=true,east=false,north=false,south=false,up=true,west=false": { "model": "barrier_2C_I-Shape" },
+    "down=false,east=false,north=true,south=true,up=false,west=false": { "model": "barrier_2C_I-Shape", "x": -90 },
+    "down=false,east=true,north=false,south=false,up=false,west=true": { "model": "barrier_2C_I-Shape", "x": -90, "y": 90  },
+
+    "down=false,east=true,north=false,south=false,up=true,west=false": { "model": "barrier_2C_L-Shape" },
+    "down=false,east=false,north=false,south=false,up=true,west=true": { "model": "barrier_2C_L-Shape", "y": 180 },
+    "down=true,east=true,north=false,south=false,up=false,west=false": { "model": "barrier_2C_L-Shape", "x": 180 },
+    "down=true,east=false,north=false,south=false,up=false,west=true": { "model": "barrier_2C_L-Shape", "x": 180, "y": 180 },
+
+    "down=false,east=false,north=true,south=false,up=true,west=false": { "model": "barrier_2C_L-Shape", "y": -90 },
+    "down=false,east=false,north=false,south=true,up=true,west=false": { "model": "barrier_2C_L-Shape", "y": 90 },
+    "down=true,east=false,north=true,south=false,up=false,west=false": { "model": "barrier_2C_L-Shape", "x": 180, "y": -90 },
+    "down=true,east=false,north=false,south=true,up=false,west=false": { "model": "barrier_2C_L-Shape", "x": 180, "y": 90 },
+
+    "down=false,east=true,north=true,south=false,up=false,west=false": { "model": "barrier_2C_L-Shape", "x": 90 },
+    "down=false,east=true,north=false,south=true,up=false,west=false": { "model": "barrier_2C_L-Shape", "x": -90 },
+    "down=false,east=false,north=true,south=false,up=false,west=true": { "model": "barrier_2C_L-Shape", "x": 90, "y": -90 },
+    "down=false,east=false,north=false,south=true,up=false,west=true": { "model": "barrier_2C_L-Shape", "x": -90, "y": 90 },
+
+    "down=false,east=false,north=true,south=true,up=true,west=false": { "model": "barrier_3C_T-Shape" },
+    "down=true,east=false,north=true,south=false,up=true,west=false": { "model": "barrier_3C_T-Shape", "x": 90 },
+    "down=true,east=false,north=true,south=true,up=false,west=false": { "model": "barrier_3C_T-Shape", "x": 180 },
+    "down=true,east=false,north=false,south=true,up=true,west=false": { "model": "barrier_3C_T-Shape", "x": 270 },
+
+    "down=false,east=true,north=false,south=false,up=true,west=true": { "model": "barrier_3C_T-Shape", "y": 90 },
+    "down=true,east=true,north=false,south=false,up=true,west=false": { "model": "barrier_3C_T-Shape", "y": 90, "x": 90 },
+    "down=true,east=true,north=false,south=false,up=false,west=true": { "model": "barrier_3C_T-Shape", "y": 90, "x": 180 },
+    "down=true,east=false,north=false,south=false,up=true,west=true": { "model": "barrier_3C_T-Shape", "y": 90, "x": 270 },
+
+    "down=false,east=false,north=true,south=true,up=false,west=true": { "model": "barrier_3C_T-Shape-Z" },
+    "down=false,east=true,north=true,south=false,up=false,west=true": { "model": "barrier_3C_T-Shape-Z", "y": 90 },
+    "down=false,east=true,north=true,south=true,up=false,west=false": { "model": "barrier_3C_T-Shape-Z", "y": 180 },
+    "down=false,east=true,north=false,south=true,up=false,west=true": { "model": "barrier_3C_T-Shape-Z", "y": 270 },
+
+    "down=false,east=true,north=false,south=true,up=true,west=false": { "model": "barrier_3C" },
+    "down=false,east=false,north=false,south=true,up=true,west=true": { "model": "barrier_3C", "y": 90 },
+    "down=false,east=true,north=true,south=false,up=true,west=false": { "model": "barrier_3C", "x": 90 },
+    "down=true,east=true,north=true,south=false,up=false,west=false": { "model": "barrier_3C", "x": 180 },
+    "down=true,east=true,north=false,south=true,up=false,west=false": { "model": "barrier_3C", "x": 270 },
+
+    "down=true,east=false,north=false,south=true,up=false,west=true": { "model": "barrier_3C", "x": 180, "y": -180 },
+    "down=true,east=false,north=true,south=false,up=false,west=true": { "model": "barrier_3C", "x": -90, "y": -180 },
+    "down=false,east=false,north=true,south=false,up=true,west=true": { "model": "barrier_3C", "x": 90, "y": -90 },
+
+    "down=true,east=false,north=true,south=false,up=true,west=true": { "model": "barrier_4C" },
+    "down=true,east=false,north=true,south=true,up=false,west=true": { "model": "barrier_4C", "x": 90 },
+    "down=false,east=false,north=true,south=true,up=true,west=true": { "model": "barrier_4C", "x": -90 },
+    "down=true,east=false,north=false,south=true,up=true,west=true": { "model": "barrier_4C", "y": -90 },
+    "down=true,east=true,north=true,south=false,up=true,west=false": { "model": "barrier_4C", "y": 90 },
+    "down=true,east=true,north=false,south=true,up=true,west=false": { "model": "barrier_4C", "y": 180 },
+    "down=false,east=true,north=true,south=true,up=true,west=false": { "model": "barrier_4C", "x": -90, "y": 180 },
+    "down=true,east=true,north=true,south=true,up=false,west=false": { "model": "barrier_4C", "x": 90, "y": 180 },
+    "down=false,east=true,north=false,south=true,up=true,west=true": { "model": "barrier_4C", "x": -90, "y": -90 },
+    "down=true,east=true,north=false,south=true,up=false,west=true": { "model": "barrier_4C", "x": -270, "y": -90 },
+    "down=false,east=true,north=true,south=false,up=true,west=true": { "model": "barrier_4C", "x": -90, "y": 90 },
+    "down=true,east=true,north=true,south=false,up=false,west=true": { "model": "barrier_4C", "x": -270, "y": -270 },
+
+    "down=true,east=true,north=false,south=false,up=true,west=true": { "model": "barrier_4-6C" },
+    "down=true,east=false,north=true,south=true,up=true,west=false": { "model": "barrier_4-6C" },
+    "down=false,east=true,north=true,south=true,up=false,west=true": { "model": "barrier_4-6C" },
+
+    "down=false,east=true,north=true,south=true,up=true,west=true": { "model": "barrier_4-6C" },
+    "down=true,east=false,north=true,south=true,up=true,west=true": { "model": "barrier_4-6C" },
+    "down=true,east=true,north=false,south=true,up=true,west=true": { "model": "barrier_4-6C" },
+    "down=true,east=true,north=true,south=false,up=true,west=true": { "model": "barrier_4-6C" },
+    "down=true,east=true,north=true,south=true,up=false,west=true": { "model": "barrier_4-6C" },
+    "down=true,east=true,north=true,south=true,up=true,west=false": { "model": "barrier_4-6C" },
+
+    "down=true,east=true,north=true,south=true,up=true,west=true": { "model": "barrier_4-6C" }
+  }
+}

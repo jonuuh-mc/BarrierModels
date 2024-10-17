@@ -1,0 +1,16 @@
+[
+    {
+        "modid": "barriermodels",
+        "name": "BarrierModels",
+        "description": "Uses mixins to force barriers to be rendered\n/barriers render - toggle rendering\n/barriers connect - toggle connected textures\n/barriers particle - toggle default held item particles",
+        "version": "${version}",
+        "mcversion": "${mcversion}",
+        "url": "",
+        "updateUrl": "",
+        "authorList": ["jonuuh"],
+        "credits": "",
+        "logoFile": "",
+        "screenshots": [],
+        "dependencies": []
+    }
+]

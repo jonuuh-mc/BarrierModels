@@ -1,0 +1,13 @@
+{
+    "__comment": "Model for four connected sides other than a cross shape (default = up/down/north/west)",
+	"parent": "block/cube",
+    "textures": {
+		"particle": "blocks/barrier/barrier",
+        "down": "blocks/barrier/barrier-NESW",
+		"up": "blocks/barrier/barrier-NESW",
+		"north": "blocks/barrier/barrier-NESW",
+		"south": "blocks/barrier/barrier-NSW",
+		"west": "blocks/barrier/barrier-NESW",
+		"east": "blocks/barrier/barrier-NES"
+    }
+}

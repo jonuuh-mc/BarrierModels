@@ -1,0 +1,13 @@
+{
+  "required": true,
+  "minVersion": "0.7",
+  "package": "io.jonuuh.barriermodels.mixins",
+  "refmap": "mixins.barriermodels.refmap.json",
+  "target": "@env(DEFAULT)",
+  "compatibilityLevel": "JAVA_8",
+  "client": [
+    "MixinBlockBarrier",
+    "MixinBlockStateMapper",
+    "MixinMinecraft"
+  ]
+}

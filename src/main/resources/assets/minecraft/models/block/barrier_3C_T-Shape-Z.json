@@ -1,0 +1,13 @@
+{
+    "__comment": "Model for three adjacent connected sides in a T shape, rotated on z axis, then rotated on x and y axes per state (blockstates can only be rotated on x and y axes) (default = north/south/west)",
+	"parent": "block/cube",
+    "textures": {
+		"particle": "blocks/barrier/barrier",
+		"down": "blocks/barrier/barrier-NSW",
+		"up": "blocks/barrier/barrier-NSW",
+		"north": "blocks/barrier/barrier-NESW",
+		"south": "blocks/barrier/barrier-NESW",
+		"west": "blocks/barrier/barrier-NESW",
+		"east": "blocks/barrier/barrier-WE"
+    }
+}
