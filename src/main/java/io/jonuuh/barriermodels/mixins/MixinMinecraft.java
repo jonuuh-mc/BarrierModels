@@ -10,7 +10,7 @@ import org.spongepowered.asm.mixin.injection.Redirect;
 @Mixin(Minecraft.class)
 public class MixinMinecraft
 {
-    // I really hope this function being redirected isn't used for more than barrier particles; I know it's just a horrible deobfuscated name but still
+    // Hoping this function being redirected isn't used for more than barrier particles; Almost definitely just a horrible deobfuscated function name.
     // unless intellij's "find in files" & "find usages" are broken it's only used here where it's redirected
     @Redirect(method = "runTick", at = @At(value = "INVOKE", target = "Lnet/minecraft/client/multiplayer/WorldClient;doVoidFogParticles(III)V"))
     private void barrierModels$clobberBarrierParticles(WorldClient worldClient, int posX, int posY, int posZ)

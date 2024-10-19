@@ -22,7 +22,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 import java.util.HashMap;
 import java.util.Map;
 
-@Mixin(value = BlockBarrier.class/*, priority = Integer.MAX_VALUE*/)
+@Mixin(value = BlockBarrier.class)
 public abstract class MixinBlockBarrier extends Block
 {
     @Unique
@@ -49,19 +49,6 @@ public abstract class MixinBlockBarrier extends Block
     {
         super(materialIn);
     }
-
-//     TODO: does nothing? default booleans are already false
-//    @Inject(method = "<init>", at = @At("RETURN"))
-//    private void barrierModels$injectDefaultBlockState(CallbackInfo ci)
-//    {
-////        // Init default state with the connection properties
-////        IBlockState baseState = this.blockState.getBaseState();
-////        for (EnumFacing enumFacing : EnumFacing.VALUES)
-////        {
-////            baseState = baseState.withProperty(barrierModels$CONNECTION_PROPERTIES.get(enumFacing), Boolean.FALSE);
-////        }
-////        this.setDefaultState(baseState);
-//    }
 
     // Makes barriers able to be rendered at all, default barrier renderType = -1: skipped in BlockRendererDispatcher -> renderBlock()
     @Inject(method = "getRenderType", at = @At("RETURN"), cancellable = true)
@@ -109,7 +96,7 @@ public abstract class MixinBlockBarrier extends Block
     {
         if (!Settings.getInstance().doConnecting())
         {
-            return super.getActualState(state, worldIn, pos);
+            return super.getActualState(state, worldIn, pos); // all properties false
         }
 
         for (EnumFacing enumFacing : EnumFacing.VALUES)

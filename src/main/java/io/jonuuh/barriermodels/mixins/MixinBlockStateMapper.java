@@ -19,7 +19,7 @@ public abstract class MixinBlockStateMapper
 
     // Remove barriers from a set of special blocks which won't have models created for them.
     // Because of this removal, somewhere in the code (not sure EXACTLY where) barriers will have models created for them
-    // during game init using the model & texture files (and blockstates?) in assets/minecraft
+    // during game init using the blockstates, models & texture files in assets/minecraft
     @Inject(method = "registerBuiltInBlocks", at = @At(value = "TAIL"))
     private void barrierModels$modifyBuiltInBlocksRegistry(Block[] p_178448_1_, CallbackInfo ci)
     {

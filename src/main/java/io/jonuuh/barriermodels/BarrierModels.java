@@ -7,11 +7,7 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
-@Mod(
-        modid = BarrierModels.modID,
-        version = BarrierModels.version,
-        acceptedMinecraftVersions = "[1.8.9]"
-)
+@Mod(modid = BarrierModels.modID, version = BarrierModels.version, acceptedMinecraftVersions = "[1.8.9]")
 public class BarrierModels
 {
     public static final String modID = "barriermodels";
