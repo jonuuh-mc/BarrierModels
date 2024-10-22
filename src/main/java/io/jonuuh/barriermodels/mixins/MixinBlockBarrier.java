@@ -29,18 +29,18 @@ public abstract class MixinBlockBarrier extends Block
     private static final Map<EnumFacing, PropertyBool> barrierModels$CONNECTION_PROPERTIES = barrierModels$initPropertyMap();
 
     // BlockState properties are used to connect barrier models (determine which block model to use per barrier block)
-    // 64 combinations (unique models) given 6 sides that could contain an adjacent barrier
-    // (64 = sum combinations of 6 choosing from 0 to 2, multiplied by two (0=6, 1=5, etc.), plus combination of 6 choosing 3)
+    // 64 unique models given 6 sides that could contain an adjacent barrier
+    // 64 = power set of 6 elements (D,E,N,S,U,W) (- see scripts/blockstates_and_models.py)
     @Unique
     private static Map<EnumFacing, PropertyBool> barrierModels$initPropertyMap()
     {
         Map<EnumFacing, PropertyBool> map = new HashMap<>();
-        map.put(EnumFacing.NORTH, PropertyBool.create("north"));
-        map.put(EnumFacing.EAST, PropertyBool.create("east"));
-        map.put(EnumFacing.SOUTH, PropertyBool.create("south"));
-        map.put(EnumFacing.WEST, PropertyBool.create("west"));
-        map.put(EnumFacing.UP, PropertyBool.create("up"));
         map.put(EnumFacing.DOWN, PropertyBool.create("down"));
+        map.put(EnumFacing.EAST, PropertyBool.create("east"));
+        map.put(EnumFacing.NORTH, PropertyBool.create("north"));
+        map.put(EnumFacing.SOUTH, PropertyBool.create("south"));
+        map.put(EnumFacing.UP, PropertyBool.create("up"));
+        map.put(EnumFacing.WEST, PropertyBool.create("west"));
         return map;
     }
 
@@ -99,7 +99,7 @@ public abstract class MixinBlockBarrier extends Block
             return super.getActualState(state, worldIn, pos); // all properties false
         }
 
-        for (EnumFacing enumFacing : EnumFacing.VALUES)
+        for (EnumFacing enumFacing : barrierModels$CONNECTION_PROPERTIES.keySet())
         {
             state = state.withProperty(barrierModels$CONNECTION_PROPERTIES.get(enumFacing), worldIn.getBlockState(pos.offset(enumFacing)).getBlock() == Blocks.barrier);
         }
