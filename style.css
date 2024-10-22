@@ -1,0 +1,50 @@
+html,
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: white;
+}
+
+:focus {
+    outline: none;
+}
+
+#container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    /* transform: scale(3); */
+    /* transform-origin: 0 0; */
+}
+
+#editingCanvas {
+    /* padding: 16px; */
+    outline: 1px solid #646464;
+    /* display: none; */
+    /* transform: scale(3); */
+}
+
+#viewingCanvas {
+    /* padding: 16px; */
+    outline: 1px solid #646464;
+    /* transform: scale(2); */
+
+    /* display: none; */
+}
+
+button {
+    cursor: pointer;
+    height: 32px;
+    width: 128px;
+}
+
+/* #downloadBtn {
+    margin-top: 4px;
+} */
