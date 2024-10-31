@@ -1,6 +1,8 @@
 ## BarrierModels
 
-Uses mixins to create and render barrier block models.
+Uses mixins to create and render barrier block models.  
+
+Latest release: https://github.com/jonuuh-mc/BarrierModels/releases/latest
 
 /barriers render - toggle rendering  
 /barriers connect - toggle connected textures  
